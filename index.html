@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: #fff;
+            color: #222;
+            line-height: 1.6;
+        }
+        /* Header */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+        }
+        
+        header h1 {
+            font-size: 1.5rem;
+            color: #e63946;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+        /* Hero Section */
+        
+        .hero {
+            text-align: center;
+            padding: 80px 10%;
+            background: url("./image/image.jpeg") no-repeat center center/cover;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .hero button {
+            padding: 14px 28px;
+            background: #008060;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        /* Feature Sections */
+        
+        .features {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            gap: 40px;
+        }
+        
+        .features img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        
+        .features .text {
+            width: 50%;
+        }
+        
+        .features h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        
+        .features p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .features button {
+            background: #008060;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        /* Highlight Section */
+        
+        .highlight {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 10%;
+            background: #f9f9f9;
+        }
+        
+        .highlight .box {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+        }
+        
+        .highlight img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        /* Global Section */
+        
+        .global {
+            text-align: center;
+            padding: 60px 10%;
+            background: #fff0f0;
+        }
+        
+        .global img {
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        
+        .global h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .global .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        /* Footer */
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            .features img,
+            .features .text {
+                width: 100%;
+            }
+            .highlight {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .highlight .box {
+                width: 100%;
+            }
+            .global img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Page </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 style="color: #f9f9f9;">The VPN that just works</h2>
+        <p style="color: aliceblue;">Go further with the #1 trusted leader in VPN</p>
+        <button>Get Started </button>
+    </section>
+
+    <!-- Feature Section 1 -->
+    <section class="features">
+        <img src="./image/image2.jpg" size="15px" alt="Feature image">
+        <div class="text">
+            <h3>Secure access, worldwide</h3>
+            <p>Connect reliably from anywhere, to anywhere. Our network of high-speed servers across 94 countries puts you in control.</p>
+            <button>Get VPN</button>
+        </div>
+    </section>
+
+    <!-- Feature Section 2 -->
+    <section class="features">
+        <div class="text">
+            <h3>One click to a safer internet</h3>
+            <p>Going online doesn’t have to mean being exposed. Whether you’re shopping from your desk or just connecting at a cafe, keep your personal information private and secure.</p>
+            <button>Learn More</button>
+        </div>
+        <img src="./image/image3.jpeg" alt="Feature image">
+    </section>
+
+    <!-- Feature Section 3 -->
+    <section class="features">
+        <img src="./image/image 4.jpeg" alt="Feature image">
+        <div class="text">
+            <h3>Use VPN on every device</h3>
+            <p>Phone, tablet, computer, router – no matter where you are or what devices you’re using, a single VPN subscription has got you covered.</p>
+            <button>Get VPN</button>
+        </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="highlight">
+        <div class="box">
+            <img src="./image/image5.jpeg" alt="icon">
+            <h4>Stronger data protection</h4>
+            <p>Take charge of your online privacy and security with best-in-class encryption.</p>
+        </div>
+        <div class="box">
+            <img src="./image/images6.png" alt="icon" sizes="80px">
+            <br>
+            <br>
+            <h4>Works seamlessly everywhere</h4>
+            <p>Experience the internet the way it’s meant to be. On the go, or on your couch.</p>
+        </div>
+        <div class="box">
+            <img src="./image/image7.jpg" alt="icon">
+            <h4>Lightning-quick connectivity</h4>
+            <p>Our VPN network is built for speed, powered by next-generation technology.</p>
+        </div>
+    </section>
+
+    <!-- Global Section -->
+    <section class="global" background color="red">
+        <br>
+        <h3>Ultra-fast servers around the globe</h3>
+        <img src="./image/image8.jpeg" alt="world map">
+
+        <div class="stats">
+            <div size="30px">160
+                <h5>Locations </h5>
+            </div>
+            <div>94
+                <h5>countries </h5>
+            </div>
+            <div sixe="60px " text size="60px"> ∞
+                <h5> Unlimited bandwidth </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MyPage. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
